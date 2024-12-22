@@ -1,0 +1,16 @@
+if SHIELD_KALAM_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Kalam"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_KALAM_LEFT || SHIELD_KALAM_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

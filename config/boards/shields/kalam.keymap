@@ -14,10 +14,12 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
+// | `    |  1  |  2  |  3  |  4  |  5  |   |  6  |  7   |  8  |  9  |  0  | BSPC |
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
-// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+// |  ESC |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  | ENTR |
+// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |      |
+//              | SHT | GUI | LWR |     |   | ENT | SPC  | ALT |  FN |
+// TODO(Ala)
                         bindings = <
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
    &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
@@ -53,4 +55,10 @@
                         >;
                 };
         };
+// Super (GUI) as defined in hyprland:
+// -----------------------------------------------------------------------------------------
+// |       |     | Wpp | Fox |     | Scs |||| Cpy |     |     | Osu | Pst |     |
+// |       | Run | Tem | Clo | Max |     |||| <-- |  v  |  ^  | --> | sSd |     |
+// |       | W1  | W2  | W3  | W4  | W5  |||| Wch | Wmu |     |     | sRs |     |
+//               |     |     |     |     ||||     |     | Run |     |
 };
