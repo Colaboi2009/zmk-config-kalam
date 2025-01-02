@@ -22,3 +22,5 @@ include:
     shield: kalam_left
   - board: nice_nano_v2
     shield: kalam_right
+  - board: nice_nano_v2
+    shield: settings_reset
