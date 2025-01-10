@@ -21,11 +21,11 @@
 //              | ALT | GUI | LWR | SHT |   | ENT | SPC  | ALT |  FN |
 // TODO(Ala)
                         bindings = <
-   &kp TILDE &kp N1 &kp N2    &kp N3    &kp N4     &kp N5          &kp N6    &kp N7     &kp N8     &kp N9   &kp N0   &kp ENTER
-   &kp TAB   &kp Q  &kp W     &kp E     &kp R      &kp T           &kp Y     &kp U      &kp I      &kp O    &kp P    &kp BSPC
-   &kp CAPS  &kp A  &kp S     &kp D     &kp F      &kp G           &kp H     &kp J      &kp K      &kp L    &kp SEMI &kp SQT // I switched caps with esc on hyprland
-   &kp LCTRL &kp Z  &kp X     &kp C     &kp V      &kp B           &kp N     &kp M      &kp COMMA  &kp DOT  &kp FSLH &kp ESC
-   &kp A     &kp A  &kp RALT  &kp LGUI  &kp LSHFT  &kp LCTRL       &kp A &kp SPACE  &mo 1      &mo 2    &kp A    &kp A
+   &kp TILDE  &kp N1  &kp N2    &kp N3    &kp N4     &kp N5           &kp N6     &kp N7     &kp N8     &kp N9   &kp N0    &kp RALT
+   &kp TAB    &kp Q   &kp W     &kp E     &kp R      &kp T            &kp Y      &kp U      &kp I      &kp O    &kp P     &kp BSPC
+   &kp CAPS   &kp A   &kp S     &kp D     &kp F      &kp G            &kp H      &kp J      &kp K      &kp L    &kp SEMI  &kp SQT // I switched caps with esc on hyprland
+   &kp LCTRL  &kp Z   &kp X     &kp C     &kp V      &kp B            &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+   &kp trans  &trans  &mo 2     &kp LGUI  &kp LSHFT  &kp LCTRL        &kp ENTER  &kp SPACE  &mo 1      &mo 2    &trans    &trans
                         >;
                 };
                 lower_layer {
@@ -35,10 +35,11 @@
 // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
-                                    &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
+   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5            &kp N6     &kp N7   &kp N8   &kp N9    &kp N0 &kp BSPC
+   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5            &kp N6     &kp N7   &kp N8   &kp N9    &kp N0 &kp BSPC
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4      &kp LEFT   &kp DOWN &kp UP   &kp RIGHT &trans &trans
+   &kp LCTRL  &trans       &trans       &trans       &trans       &trans            &trans     &trans   &trans   &trans    &trans &trans
+   &trans     &trans       &kp LGUI     &trans       &trans       &trans            &kp SPACE  &kp RET  &trans   &kp RALT  &trans &trans
                         >;
                 };
 
@@ -49,17 +50,19 @@
 // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp BSPC
-   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
-                             &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+   &kp trans  &trans     &trans    &trans    &trans     &trans               &kp trans &kp trans   &kp trans  &kp trans  &kp trans  &kp trans
+   &kp TAB    &kp EXCL   &kp AT    &kp HASH  &kp DLLR   &kp PRCNT            &kp CARET &kp AMPS    &kp ASTRK  &kp LPAR   &kp RPAR   &kp BSPC
+   &kp ESC    &kp MINUS  &kp PLUS  &kp EQUAL &kp LBRC   &kp RBRC             &kp LBKT  &kp RBKT    &kp PIPE   &kp LPAR   &kp RPAR   &trans 
+   &kp LCTRL  &trans     &trans    &trans    &trans     &trans               &kp UNDER &kp GRAVE   &kp TILDE  &trans     &trans     &trans
+   &trans     &trans     &kp LGUI  &trans    &kp SPACE  &trans               &kp RET   &space      &kp RALT   &trans     &trans     &trans
                         >;
                 };
         };
 // Super (GUI) as defined in hyprland:
 // -----------------------------------------------------------------------------------------
+// |       |     |     |     |     |     ||||     |     |     |     |     |     |
 // |       |     | Wpp | Fox |     | Scs |||| Cpy |     |     | Osu | Pst |     |
 // |       | Run | Tem | Clo | Max |     |||| <-- |  v  |  ^  | --> | sSd |     |
 // |       | W1  | W2  | W3  | W4  | W5  |||| Wch | Wmu |     |     | sRs |     |
-//               |     |     |     |     ||||     |     | Run |     |
+//               |     | GUI |     |     ||||     |     | Run |     |
 };
