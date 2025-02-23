@@ -25,7 +25,7 @@
    &kp TAB    &kp Q   &kp W     &kp E       &kp R       &kp T            &kp Y      &kp U      &kp I      &kp O    &kp P     &kp BSPC
    &kp CAPS   &kp A   &kp S     &kp D       &kp F       &kp G            &kp H      &kp J      &kp K      &kp L    &kp SEMI  &kp SQT // I switched caps with esc on hyprland
    &kp LCTRL  &kp Z   &kp X     &kp C       &kp V       &kp B            &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-   &trans     &trans  &mo 2     &kp LSHIFT  &kp LGUI  &kp LCTRL        &kp ENTER  &kp SPACE  &mo 2      &mo 1    &trans    &trans
+   &trans     &trans  &kp LALT  &kp LSHIFT  &kp LGUI  &kp LCTRL        &kp ENTER  &kp SPACE  &mo 2      &mo 1    &trans    &trans
                         >;
                 };
                 lower_layer {
@@ -60,9 +60,9 @@
         };
 // Super (GUI) as defined in hyprland:
 // -----------------------------------------------------------------------------------------
-// |       |     |     |     |     |     ||||     |     |     |     |     |     |
-// |       |     | Wpp | Fox |     | Scs |||| Cpy |     |     | Osu | Pst |     |
-// |       | Run | Tem | Clo | Max |     |||| <-- |  v  |  ^  | --> | sSd |     |
-// |       | W1  | W2  | W3  | W4  | W5  |||| Wch | Wmu |     |     | sRs |     |
+// |       | 1M1 | 2M1 | 3M1 | 4M1 | 5M1 ||||     |     |     |     |     |     |
+// |       | Clo | Pet | Fox |     | Scs |||| Cpy |     |     | Osu | Pet |     | Pst?
+// |       | Run | Tem | Clo | Max |     |||| <-- |  v  |  ^  | --> | RsP |     |
+// |       | 1M2 | 2M2 | 3M2 | 4M2 | 5M2 |||| Wch | Wmu |     |     |     |     |
 //               |     | GUI |     |     ||||     |     | Run |     |
 };
