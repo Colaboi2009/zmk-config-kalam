@@ -53,7 +53,7 @@
    &kp TAB    &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT            &kp CARET &kp AMPS    &kp ASTRK  &kp LPAR    &kp RPAR   &kp BSPC
    &kp ESC    &kp MINUS  &kp PLUS   &kp EQUAL  &kp LBRC   &kp RBRC             &kp LEFT  &kp DOWN    &kp UP     &kp RIGHT   &kp COLON  &trans 
    &kp LCTRL  &trans     &kp UNDER  &kp LPAR   &kp RPAR   &kp PIPE             &kp LBKT  &kp RBKT    &kp TILDE  &kp GRAVE   &kp BSLH   &trans
-   &trans     &trans     &kp trans  &trans     &kp trans  &trans               &kp RET   &kp SPACE   &kp RALT   &trans      &trans     &trans
+   &trans     &trans     &trans     &trans        &trans  &trans               &kp RET   &kp SPACE   &kp RALT   &trans      &trans     &trans
                         >;
                 };
         };
