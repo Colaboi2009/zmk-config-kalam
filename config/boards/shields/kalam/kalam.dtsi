@@ -35,11 +35,7 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4) RC(4,5)               RC(4,6) RC(4,7) RC
 		hyprpet: hyprpet {
 			compatible = "zmk,behavior-key-press";
 			label = "HYPRPET";
-			bindings  = <&kp HYPRPET>;
+			bindings  = <&kp 0xF0>;
 		};
-	};
-
-	keycodes {
-		HYPRPET = <0xF0>
 	};
 };
