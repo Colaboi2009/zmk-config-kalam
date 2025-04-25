@@ -1,0 +1,13 @@
+/ {
+behaviors {
+hyprpet: hyprpet {
+	compatible = "zmk,behavior-key-press";
+	label = "HYPRPET";
+	bindings  = <&kp HYPRPET>
+	};
+};
+
+keycodes {
+HYPRPET = <0xF0>
+};
+}
