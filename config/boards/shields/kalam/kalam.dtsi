@@ -31,15 +31,11 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4) RC(4,5)               RC(4,6) RC(4,7) RC
         diode-direction = "col2row";
     };
 
-behaviors {
-hyprpet: hyprpet {
-	compatible = "zmk,behavior-key-press";
-	label = "HYPRPET";
-	bindings  = <&kp HYPRPET>
-	};
-};
-
-keycodes {
-	HYPRPET = <0xF0>
+	behaviors {
+		hyprpet: hyprpet {
+			compatible = "zmk,behavior-key-press";
+			label = "HYPRPET";
+			bindings  = <&raw HID_USAGE_KEY 0xF0>;
+		};
 	};
 };
