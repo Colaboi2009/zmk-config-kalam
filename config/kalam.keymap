@@ -10,7 +10,6 @@
 
 #define HYPR LC(LA(LS(LGUI)))
 / {
-	}
         keymap {
                 compatible = "zmk,keymap";
 
