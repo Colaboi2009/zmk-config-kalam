@@ -59,9 +59,9 @@
         };
 // Super (GUI) as defined in hyprland (or elsewhere):
 // -----------------------------------------------------------------------------------------
-// | HYPRPET | 1M1 | 2M1 | 3M1 | 4M1 | 5M1 |||| 6M1 | 7M1 | 8M1        | 9M1 | 10M1     |     |
-// |         | Clo |     | Fox |     | Scs |||| Cpy |     | LangSwitch | Osu | Pet      |     | Pst?
-// |         | Run | Tem | Clo | Max |     |||| <-- |  v  |  ^         | --> | ResetPet |     |
-// |         | 1M2 | 2M2 | 3M2 | 4M2 | 5M2 |||| Wch | Wmu |            |     |          |     |
-//                 |     | GUI |     |     ||||     |     | Run        |     |
+// | HYPRPET | 1M1 | 2M1 | 3M1 | 4M1 | 5M1 |   | 6M1 | 7M1 | 8M1        | 9M1 | 10M1     |     |
+// |         | Clo |     | Fox |     | Scs |   | Cpy |     | LangSwitch | Osu | Pet      |     | Pst?
+// |         | Run | Tem | Clo | Max |     |   | <-- |  v  |  ^         | --> | ResetPet |     |
+// |         | 1M2 | 2M2 | 3M2 | 4M2 | 5M2 |   | Wch | Wmu |            |     |          |     |
+//                 |     | GUI |     |     |   |     |     | Run        |     |
 };
