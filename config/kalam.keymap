@@ -12,22 +12,34 @@
 
 #define HYPR LC(LA(LS(LGUI)))
 / {
-        keymap {
-                compatible = "zmk,keymap";
+	behaviors {
+		oneshot_layer_custom: oneshot_layer_custom {
+			compatible = "zmk,behavior-one-shot-layer";
+			label = "Custom one shot layer";
+			#binding-cells = <1>;
+			bindings = <&the_layer>;
+			release-after-ms = <0>;
+			cancel-if-held = <true>;
+		};
+	};
 
-                default_layer {
-// -----------------------------------------------------------------------------------------
+
+	keymap {
+		compatible = "zmk,keymap";
+
+		default_layer {
+			// -----------------------------------------------------------------------------------------
 // | LALT    |  1  |  2   |  3  |  4  |  5  |   |  6  |  7   |  8  |  9  |  0  | RALT |
 // | TAB     |  Q  |  W   |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSP  |
 // | ESC     |  A  |  S   |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  | '    |
 // | SHFT    |  Z  |  X   |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | CAPS |
 //                 | HYPR | GUI | SHT | CTR |   | ENT | SPC  | MO2 | MO1 |
                         bindings = <
-   &kp LALT     &kp N1  &kp N2    &kp N3      &kp N4      &kp N5               &kp N6     &kp N7     &kp N8     &kp N9    &kp N0    &tog 3
-   &kp TAB      &kp Q   &kp W     &kp E       &kp R       &kp T                &kp Y      &kp U      &kp I      &kp O     &kp P     &kp BSPC
-   &kp ESC      &kp A   &kp S     &kp D       &kp F       &kp G                &kp H      &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
-   &kp LCTRL    &kp Z   &kp X     &kp C       &kp V       &kp B                &kp N      &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp CAPS
-   &trans       &trans  &kp HYPR  &kp LGUI    &kp LSHIFT  &sl 3                &kp ENTER  &kp SPACE  &mo 2      &mo 1     &trans    &trans
+   &kp LALT     &kp N1  &kp N2    &kp N3      &kp N4      &kp N5                                 &kp N6     &kp N7     &kp N8     &kp N9    &kp N0    &tog 3
+   &kp TAB      &kp Q   &kp W     &kp E       &kp R       &kp T                                  &kp Y      &kp U      &kp I      &kp O     &kp P     &kp BSPC
+   &kp ESC      &kp A   &kp S     &kp D       &kp F       &kp G                                  &kp H      &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
+   &kp LCTRL    &kp Z   &kp X     &kp C       &kp V       &kp B                                  &kp N      &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp CAPS
+   &trans       &trans  &kp HYPR  &kp LGUI    &kp LSHIFT  &oneshot_layer_custom 3                &kp ENTER  &kp SPACE  &mo 2      &mo 1     &trans    &trans
                         >;
                 };
                 lower_layer {
